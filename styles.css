@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+    margin: 0 5px 0 10px;
+}
+
+.header {
+    background-color: #289dd2;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+h1 {
+    color: #f7f7f7;
+    height: 32px;
+    padding: 0;
+    margin: 19px 43% 0 0;
+    float: left;
+    font-family: Gill Sans MT;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+}
+
+.nav {
+    color: white;
+    display: inline-block;
+    margin: 26px 50px 25px 0;
+    font-family: Montserrat;
+    text-decoration: underline 3px transparent;
+    text-underline-offset: 5px;
+    transition: text-decoration 0.4s ease, transform 0.4s ease;
+}
+
+.nav:hover {
+    color: azure;
+    text-decoration: underline 3px azure;
+    transform: scale(1.1);
+}
+
+p {
+    font-family: Verdana;
+}
+
+.bg {
+    background-image: url("images/cover.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    position: absolute;
+    top: 25%;
+    left: 7.5%;
+    font-family: Verdana;
+    color:#faebd7;
+}
+
+h2 {
+    font-size: 72px;
+    margin: 0;
+}
+
+.links {
+    color: lavender;
+    display: inline-block;
+    margin: 50px 50px;
+    font-family: Montserrat;
+    text-decoration: underline 2px transparent;
+    text-underline-offset: 5px;
+    transition: text-decoration 0.4s ease, transform 0.4s ease;
+}
+
+.links:hover {
+    text-decoration: underline 2px;
+    transform: scale(1.2);
+}
+
+.fb:hover {
+    color: #0099ff;
+}
+
+.ms:hover {
+    color: #ff55aa;
+}
+
+.wa:hover {
+    color: #57d163;
+}
+
+.links img {
+    height: 20px;
+    margin: 0 5px;
+    float: left;
+}
+
+.info {
+    text-align: left;
+    margin: 50px 0 50px 73%;
+    color: honeydew;
+    font-family: Montserrat;
+}
+
+.info img {
+    height: 25px;
+    margin: 0 5px;
+    float: left;
+}
+
+#Home h3 {
+    padding: 70px 50px 0px;
+    margin: 0;
+    font-size: 32px;
+    font-family: Verdana;
+}
+
+#Home p {
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    width: 45%;
+    text-align: justify;
+}
+
+#About h3 {
+    padding: 70px 50px 0px;
+    margin: 0;
+    font-size: 32px;
+    font-family: Verdana;
+}
+
+#About p {
+    padding: 30px 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#Services h3{
+    padding: 70px 50px 0px;
+    margin: 0;
+    font-size: 32px;
+    font-family: Verdana; 
+}
+
+#Services li {
+    margin-left: 40px;
+    padding: 20px 10px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+#Contact h3{
+    padding: 70px 50px 0px;
+    margin: 0;
+    font-size: 32px;
+    font-family: Verdana;
+    color: azure;
+}
+
+#Contact {
+    background-color: #365b6d;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-text {
+        top: 17%;
+        left: 10%;
+    }
+
+    h2 {
+        font-size: 6.05vh;
+    }
+
+    .info {
+        margin: 50px 20px;        
+    }
+
+    .header {
+        overflow: scroll;
+        width: 100vw;
+    }
+
+    .titlebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    h1 {
+        display: inline-block;
+        margin: 0;
+        float: none;
+    }
+
+    .logo {
+        display: block;
+        margin: 0;
+        float: none;
+    }
+
+    .nav {
+        display: block;
+        text-align: center;
+        margin: 20px 0; 
+    }
+}
